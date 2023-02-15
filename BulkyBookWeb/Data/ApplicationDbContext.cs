@@ -11,5 +11,9 @@ namespace BulkyBookWeb.Data
         }
 
         public DbSet<Category> categories { get; set; }
+
+        public DbSet<Book> books { get; set; }
+
+        public DbSet<User> users { get; set; }
     }
 }

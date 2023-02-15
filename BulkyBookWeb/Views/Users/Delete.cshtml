@@ -1,0 +1,15 @@
+﻿@model User
+
+<form method="post">
+    <h2>Delete User</h2>
+    <div class=mb-3>
+        <label asp-for=name></label>
+        <input asp-for=name class="form-control" disabled/>
+    </div>
+    <div class=mb-3>
+        <label asp-for=age></label>
+        <input asp-for=age class="form-control" disabled/>
+    </div>
+    <button class="btn btn-danger" type="submit">Delete</button>
+    <a class="btn btn-secondary" asp-controller="Users" asp-action="Index">Back to list</a>
+</form>
